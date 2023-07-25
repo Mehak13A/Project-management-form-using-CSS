@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Project Management</title>
+  </head>
+  
+  <body>
+    <style> 
+      h1{
+        text-align: center;
+      }
+      
+      form{
+        background-color: #30D5C8;
+        margin-left: 250px;
+        width: 360px;
+        border-radius: 2px;
+        padding: 15px;
+      }
+      
+      submit{
+        background-color: green;
+        margin-left: 70px;
+        border-radius: 5px; 
+        padding: 10px;
+      }
+      
+      clear{
+        background-color: #0066CD;
+        margin-left: 10px;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      
+      input{
+        border-radius: 3px;
+      }
+      
+      textarea{
+        border-radius: 3px;
+      }
+    </style>
+    
+    <h1><u>Project Management</u></h1>
+    
+    <form>
+      <table>
+        <tr>
+          <td>
+            <b>Project Name</b>
+          </td>
+          
+          <td>
+            <input type="text" name="project" placeholder="project name">
+          </td>
+        
+        </tr>
+        
+        <tr>
+          <td>
+            <b>Assigned to</b>
+          </td>
+          <td>
+            <select name="state" id="states">
+                <option value="emp">Er Merry Petision</option>
+                <option value="mh">John Smith</option>
+                <option value="mp">Marry Jones</option>
+                <option value="others">Others</option>
+            </select>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <b>Start Date</b>
+          </td>
+          
+          <td>
+            <label for="startdate"></label>
+            <input type="date" id="startdate" name="startdate" placeholder="dd-mm-yyyy">
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <b>End Date</b>
+          </td>
+          
+          <td>
+            <label for="enddate"></label>
+            <input type="date" id="enddate" name="enddate" placeholder="dd-mm-yyyy">
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <b>Priority</b>
+          </td>
+          
+          <td>
+            <input type="radio" id="high" name="p" value="h"> <b>High</b>
+            <input type="radio" id="average" name="p" value="a"> <b>Average</b>
+            <input type="radio" id="low" name="p" value="l"> <b>Low</b>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <b>Description</b>
+          </td>
+          
+          <td>
+            <textarea id="description" name="des" rows="4" cols="25"></textarea>
+          </td>
+        </tr>
+        <tr></tr><tr></tr><tr></tr>
+        
+        <tfoot>
+          <td>
+            <submit>&ensp;Submit</submit> 
+          </td>
+          <td>
+            <clear>Clear</clear> 
+          </td>  
+        </tfoot>
+      </table>
+    </form>
+      
+  </body>
+</html>
